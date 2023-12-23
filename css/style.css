@@ -2105,7 +2105,7 @@ label #bars:hover
 {
 
     nav ul .ul-bg li .pages {
-        top: 55%;
+        top: 55.5%;
     }
 
     .about .about_vision .our-story h4, .about .about_vision .our-story p
@@ -2290,14 +2290,14 @@ label #bars:hover
         bottom: 65%;
     }
     nav ul .ul-bg li .pages {
-        top: 52%;
-        left: 60%;
+        top: 52.4%;
+        left: 62%;
         width: 14vh;
     }
     .navBar .bg-color2 nav ul .ul-bg li .pages
     {
-        top: 56%;
-        left: 60%;
+        top: 56.4%;
+        left: 62%;
     }
     nav ul .ul-bg li .pages a 
     {
