@@ -2290,14 +2290,14 @@ label #bars:hover
         bottom: 65%;
     }
     nav ul .ul-bg li .pages {
-        top: 55%;
-        left: 65%;
+        top: 50%;
+        left: 60%;
         width: 14vh;
     }
     .navBar .bg-color2 nav ul .ul-bg li .pages
     {
-        top: 64.1%;
-        left: 64%;
+        top: 50%;
+        left: 60%;
     }
     nav ul .ul-bg li .pages a 
     {
