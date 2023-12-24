@@ -979,14 +979,14 @@ footer .bg-color2 .end
     text-align: center;
     text-transform: capitalize;
     color: white;
-    padding: 10px 0 10px 0;
+    padding: 8px 0 4px 0;
     font-family: 'Rubik';
     /* height: 10vh; */
 }
 
 footer .bg-color2 .end .one
 {
-    padding-bottom: 1vh;
+    padding-bottom: 0.5vh;
 }
 footer .bg-color2 .end p span
 {
@@ -1467,6 +1467,9 @@ label #bars:hover
 }
 @media (max-width: 873px)
 {
+    footer
+    {
+        background-size: cover;
 
     footer, footer .bg-color2 
     {
