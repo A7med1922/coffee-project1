@@ -9,42 +9,38 @@
    --bg-color:#2c1919e6;
 }
 
-* 
-{
+*{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    /* font-family: var(--mainfont); */
     text-decoration: none;
     list-style: none;
 }
-body
-{
+body{
     background-color: var(--background_color);
-   
 }
 /* start header */
-header
-{
+header{
     height: 100vh;
     background-image: url(../img/carousel-1.jpg);
-    /* background: linear-gradient(rgba(15, 23, 43, 0.9), rgba(15, 63, 43, 0.9)), url(../img/carousel-1.jpg); */
     background-size: 100% 100%;
-    /* filter: grayscale(40%); */
     overflow: hidden;
 }
-header .bg
-{
-    background-color: rgba(44,30,29,0.6);
+header .bg{
     background-color: #2c1919bd;;
-    height: 100vh;
-    
+    height: 100vh;    
 }
 nav 
 {
     display: flex;
     padding: 30px;
     justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    height: 14vh;
+    background-color: #2d1f1b82;
+    z-index:101 ;
+    border-bottom: 2px solid var(--maincolor2);
 }
 nav .logo a
 {
@@ -57,9 +53,10 @@ nav ul .ul-bg
 {
     display: flex;
     justify-content: end;
-
     gap: 30px;
     list-style: none;
+ 
+  
 }
 nav ul .ul-bg li a 
 {
@@ -67,14 +64,12 @@ nav ul .ul-bg li a
     font-family: 'M PLUS Rounded 1c', sans-serif;
     /* transition: 0.4s; */
     border: 1px solid transparent;
+    font-size: 18px;
 }
 nav ul .ul-bg li  .mark
 {
     color: var(--maincolor1);
 } 
-nav ul li .saka 
-{
-}
 nav ul .ul-bg li a:hover
 {
     color: var(--maincolor1);
@@ -96,36 +91,45 @@ nav ul .ul-bg li a
     color:gold;
 } 
 
-nav ul .ul-bg .list .saka
+nav ul .ul-bg li 
 {
-    border: 1px solid transparent;
-    padding: 10px;
-    border-radius: 10px;
+    /* border: 1px solid transparent; */
+    
+    transition: 0.5s ease;
+    font-size: 16px;
+}
+nav ul .ul-bg .list
+{
+    /* border: 1px solid transparent; */
+    /* transition: 1s ease; */
 }
 nav ul .ul-bg .list:hover
 {
-    border: 1px solid white;
+    /* border: 1px solid white; */
     border-radius: 5px;
     /* padding: 10px; */
     /* transition: 0.5s ease; */
    
+
 }
+nav ul .ul-bg li:hover
+{
+    transform: scale(1.2);
+}
+
 .fa-caret-right
 {
     display: none;
 }
-.fa-caret-down
-{
 
-}
-nav ul .ul-bg li .pages
-{
+nav ul .ul-bg li .pages{
     padding: 10px;
     background-color: var(--background_color);
+    /* background-color: var(--maincolor2); */
     display: none;
     position: absolute;
-    top: 60px;
-    width: 20vh;
+    top: 24px;
+    /* width: 20vh; */
     text-align: center;
     border-radius: 5px;
 }
@@ -138,17 +142,16 @@ nav ul .ul-bg li .pages hr
 nav ul .ul-bg li .pages a 
 {
     color:var(--maincolor2);
-    
+    /* color: white; */
+    font-size: 14px;
 }
 nav ul .ul-bg li .pages p 
 {
-    margin-top: 5px;
-    padding-bottom: 5px;
+   margin: 2px 0;
 }
 nav ul .ul-bg .list:hover .pages
 {
     display: block;
-
 }
 nav ul .ul-bg li .pages a:hover
 {
@@ -158,7 +161,7 @@ nav ul .ul-bg li .pages a:hover
 header .bg .introduction
 {
     text-align: center;
-    margin-top: 30vh;
+    padding-top: 43vh;
     font-family: var(--mainfont);
 }
 header .bg .introduction h3, h1, h2
@@ -1029,7 +1032,7 @@ footer .bg-color2 .img_bottom img
 .navBar .bg-color2 .bars
 {
     text-align: center;
-    padding-top: 9vh;
+    padding-top: 27vh;
     color: white;
 }
 .navBar .bg-color2 .bars h1
@@ -1672,11 +1675,15 @@ label #bars:hover
         position: absolute;
         top: 14vh;
         left: 0%;
-        display: none;
-        transform: scaleY(1);
+        /* display: none; */
+        /* transform: scaleY(1); */
         background-image: url(../img/carousel-2.jpg);
         background-size: 100% 100%;
         /* transition:all 2s;   */
+        
+        transform: rotateX(90deg);
+        transform-origin: top center;
+        transition: 1s ease;
      
        }
 
@@ -1693,7 +1700,7 @@ label #bars:hover
         
     header .bg .introduction    
     {
-        margin-top: 7vh;
+        padding-top: 22vh;
     }
 
     header .bg nav ul, header .bg nav ul .ul-bg
@@ -1717,7 +1724,7 @@ label #bars:hover
             padding: 14px 0px;
          }     
 
-     nav ul li a 
+         nav ul .ul-bg li a 
          {
              font-size: 20px;
              font-weight: 500;
@@ -1735,23 +1742,25 @@ label #bars:hover
          }
     #check:checked ~ ul
          {
-         
-             display: block;
-         
-             /* transition: all 2s ease; */
-             /* transform: rotateY(11deg) scaleY(1); */
-             
-             transform: scaleY(1) rotateY(11deg);
-             transform-origin: top center;
+
+             transform: rotateY(0deg);
          
          }
+    
 
+         nav ul .ul-bg
+         {
+            box-shadow: 5px 10px 14px var(--maincolor2);
+         }
 
      nav ul .ul-bg li:hover
         {
-          border: 1px solid white;
+          border: 1px solid transparent;
           border-radius: 5px;
+          box-shadow: 0px 1px 8px var(--maincolor1);
+          transform: scale(1);
          }
+
 
      nav ul .ul-bg .list .saka
      {
@@ -1761,11 +1770,8 @@ label #bars:hover
      }
      nav ul .ul-bg .list:hover
      {
-         border: 1px solid white;
-         border-radius: 5px;
-         padding: 16px;
-         /* transition: 0.5s ease; */
-        
+        border: 1px solid transparent;
+ 
      }
      .fa-caret-right {
         display: inline-block;
@@ -1779,14 +1785,14 @@ label #bars:hover
         display: none;
     }
     nav ul .ul-bg li .pages {
-        top: 58%;
+        top: -9.1%;
         left: 59%;
-        /* width: 15vh; */
+        width: 18vh;
         padding: 0;
     }
     .navBar .bg-color2 nav ul .ul-bg li .pages
     {
-        top: 63%;
+        top: -17%;
         left: 61%;
     }
      nav ul .ul-bg li .pages a 
@@ -2104,9 +2110,9 @@ label #bars:hover
 @media (max-width: 480px)
 {
 
-    nav ul .ul-bg li .pages {
+    /* nav ul .ul-bg li .pages {
         top: 55.5%;
-    }
+    } */
 
     .about .about_vision .our-story h4, .about .about_vision .our-story p
     {
@@ -2155,6 +2161,11 @@ label #bars:hover
     .arrows .comeback-botton, .arrows .down
     {
         left: 84%;
+    }
+
+    .navBar .bg-color2 .bars h1
+    {
+        font-size: 39px;
     }
 
 
@@ -2287,17 +2298,18 @@ label #bars:hover
         font-size: 12px;
         padding: 10px;
         height: 13px;
-        bottom: 65%;
+        bottom: 69%;
     }
     nav ul .ul-bg li .pages {
-        top: 52.4%;
-        left: 62%;
-        width: 14vh;
+        top: -9.1%;
+        left: 63%;
+        width: 15vh;
+        padding: 0;
     }
     .navBar .bg-color2 nav ul .ul-bg li .pages
     {
-        top: 56.4%;
-        left: 62%;
+        top: -17%;
+        left: 65%;
     }
     nav ul .ul-bg li .pages a 
     {
