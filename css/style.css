@@ -33,11 +33,11 @@ header .bg{
 nav 
 {
     display: flex;
-    padding: 30px;
+    padding: 20px;
     justify-content: space-between;
     position: fixed;
     width: 100%;
-    height: 14vh;
+    height: 10vh;
     background-color: #2d1f1b82;
     z-index:101 ;
     border-bottom: 2px solid var(--maincolor2);
@@ -1641,7 +1641,6 @@ label #bars:hover
       width: 50px;
       height: 50px;
     }
-
     .service .types img {
         width: 120px;
         height: 120px;
@@ -1651,19 +1650,16 @@ label #bars:hover
     }
     .service .types .service-inform .line1 h3 {
         font-size: 12px;
-    }
- 
+    } 
 }
-
-
-
 
 @media (max-width: 700px)
 {
   nav
         {
             background-color: #33211d;
-            height: 14vh;
+            height: 10vh;
+            padding: 15px 10px;
 
         }
 
