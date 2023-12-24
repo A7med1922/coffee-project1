@@ -2298,7 +2298,7 @@ label #bars:hover
         font-size: 12px;
         padding: 10px;
         height: 13px;
-        bottom: 69%;
+       bottom: 62%;
     }
     nav ul .ul-bg li .pages {
         top: -9.1%;
@@ -2389,6 +2389,7 @@ label #bars:hover
     
 
 }
+/*
 @media (max-width: 343px)
 {
     .about .about_vision .our-story
@@ -2433,10 +2434,6 @@ label #bars:hover
     {
         display: block;
     }  
-    .service .types div
-    {
-        /* padding-bottom: 3vh; */
-    } 
     .service .types img
     {
         width: 220px;
@@ -2533,6 +2530,7 @@ label #bars:hover
         font-size: 14px;
     }
 }
+*/
 
 
 
